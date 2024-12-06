@@ -1,2 +1,2 @@
-# student_system_java-fx
-A system in java for managing students' grades
+# student_system_javafx
+A system in java and javafx for managing students' grades
