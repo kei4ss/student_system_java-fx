@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2E2E2E;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.frontEnd.controllers.StudentLoginController">
+   <children>
+      <Pane layoutX="50.0" layoutY="40.0" prefHeight="415.0" prefWidth="310.0" style="-fx-background-color: #4A6572; -fx-border-color: #4A6572; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+         <children>
+            <PasswordField layoutX="43.0" layoutY="222.0" prefHeight="35.0" prefWidth="224.0" style="-fx-background-color: #EDEDED; -fx-border-color: #BFBFBF; -fx-border-radius: 10px; -fx-background-radius: 10px;" />
+            <TextField layoutX="43.0" layoutY="148.0" prefHeight="35.0" prefWidth="224.0" style="-fx-background-color: #EDEDED; -fx-border-radius: 10px; -fx-border-color: #BFBFBF; -fx-background-radius: 10px;" />
+            <Button fx:id="btnEnter" alignment="CENTER" layoutX="115.0" layoutY="307.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #333333; -fx-border-color: #4D4D4D; -fx-border-radius: 6px; -fx-background-radius: 6px;" text="Enter" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Label alignment="CENTER" layoutX="61.0" layoutY="63.0" prefHeight="47.0" prefWidth="188.0" style="-fx-font-weight: 500; -fx-font-size: 24px;" text="Student Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="432.0" fitWidth="301.0" layoutX="432.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/girlStudent.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnToProfessor" layoutX="669.0" layoutY="462.0" mnemonicParsing="false" onAction="#functionToProfessor" prefHeight="30.0" prefWidth="119.0" style="-fx-background-color: #4D4D4D; -fx-border-color: #333333; -fx-background-radius: 8px; -fx-border-radius: 8px;" text="I'm a professor" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
