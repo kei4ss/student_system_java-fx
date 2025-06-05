@@ -1,36 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="aPaneProfessor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2E2E2E;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.frontEnd.controllers.ProfessorLoginController">
+<AnchorPane fx:id="aPaneProfessor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to right, #333333, #1F1F1F);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.frontEnd.controllers.ProfessorLoginController">
    <children>
-      <Pane layoutX="50.0" layoutY="40.0" prefHeight="415.0" prefWidth="310.0" style="-fx-background-color: #4A6572; -fx-border-color: #4A6572; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <HBox alignment="BOTTOM_CENTER" prefHeight="507.0" prefWidth="803.0" spacing="20.0">
          <children>
-            <PasswordField layoutX="43.0" layoutY="222.0" prefHeight="35.0" prefWidth="224.0" style="-fx-background-color: #EDEDED; -fx-border-color: #BFBFBF; -fx-border-radius: 10px; -fx-background-radius: 10px;" />
-            <TextField layoutX="43.0" layoutY="148.0" prefHeight="35.0" prefWidth="224.0" style="-fx-background-color: #EDEDED; -fx-border-radius: 10px; -fx-border-color: #BFBFBF; -fx-background-radius: 10px;" />
-            <Button alignment="CENTER" layoutX="115.0" layoutY="307.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #333333; -fx-border-color: #4D4D4D; -fx-border-radius: 6px; -fx-background-radius: 6px;" text="Enter" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font></Button>
-            <Label alignment="CENTER" layoutX="61.0" layoutY="63.0" prefHeight="47.0" prefWidth="188.0" style="-fx-font-weight: 500; -fx-font-size: 24px;" text="Professor Login" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
+            <VBox alignment="CENTER" prefHeight="499.0" prefWidth="287.0" spacing="15.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="47.0" prefWidth="205.0" style="-fx-font-weight: 500; -fx-font-size: 24px;" text="Área do professor" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <VBox spacing="3.0">
+                     <children>
+                        <VBox prefHeight="64.0" prefWidth="267.0" spacing="5.0">
+                           <children>
+                              <Label text="Usuário" textFill="WHITE" />
+                              <TextField fx:id="loginFiled" promptText="👤 Login" style="-fx-background-color: #EDEDED; -fx-border-radius: 10px; -fx-border-color: #BFBFBF; -fx-background-radius: 10px;" />
+                           </children>
+                        </VBox>
+                        <VBox spacing="5.0">
+                           <children>
+                              <Label text="Senha" textFill="WHITE" />
+                              <PasswordField fx:id="passwordField" promptText="🔒 password" style="-fx-background-color: #EDEDED; -fx-border-color: #BFBFBF; -fx-border-radius: 10px; -fx-background-radius: 10px;" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #333333; -fx-border-color: #4D4D4D; -fx-border-radius: 6px; -fx-background-radius: 6px;" text="Acessar" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#functionToStudent" prefHeight="29.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-text-decoration: underline;" text="Sou um estudante" textFill="#cccccc">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="alertLabel" alignment="CENTER" contentDisplay="CENTER" textFill="#e10e0e">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <ImageView fitHeight="389.0" fitWidth="380.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/professor.png" />
+               </image>
+            </ImageView>
          </children>
-      </Pane>
-      <ImageView fitHeight="428.0" fitWidth="432.0" layoutX="368.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@img/manProfessor.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="674.0" layoutY="462.0" mnemonicParsing="false" onAction="#functionToStudent" prefHeight="20.0" prefWidth="113.0" style="-fx-background-color: #4D4D4D; -fx-background-radius: 8px; -fx-border-color: #333333; -fx-border-radius: 8px;" text="I'm a student" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="13.0" />
-         </font>
-      </Button>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
    </children>
 </AnchorPane>

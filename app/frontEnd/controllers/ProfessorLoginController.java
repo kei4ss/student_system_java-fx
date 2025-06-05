@@ -1,21 +1,27 @@
 package app.frontEnd.controllers;
 
 import javafx.fxml.FXML;
-import javafx.scene.layout.AnchorPane;
-import java.io.IOException;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 public class ProfessorLoginController {
-    private final ConfigControllers config = new ConfigControllers();
 
     @FXML
-    AnchorPane aPaneProfessor;
+    private Label alertLabel;
+
+    @FXML
+    private TextField loginFiled;
+
+    @FXML
+    private PasswordField passwordField;
 
     @FXML
     void functionToStudent() {
         try {
-            config.changeScreen(aPaneProfessor, "../gui/studentLogin.fxml");
-        }catch(IOException e){
-            System.out.println("erro ao carregar página");
+            Navigation.toStudentLoginScreen();
+        }catch(Exception e){
+            alertLabel.setText("Erro ao carregar página de estudante!");
         }
     }
 }
