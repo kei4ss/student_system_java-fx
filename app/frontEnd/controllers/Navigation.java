@@ -7,6 +7,6 @@ public class Navigation {
         ConfigControllers.changeScreen("../gui/FXML/studentLogin.fxml", "Student login");
     }
     public static void toProfessorLoginScreen() throws Exception{
-        ConfigControllers.changeScreen("../gui/FXML/professorLogi.fxml", "Professor login");
+        ConfigControllers.changeScreen("../gui/FXML/professorLogin.fxml", "Professor login");
     }
 }
