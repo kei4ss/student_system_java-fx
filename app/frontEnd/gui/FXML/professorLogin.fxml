@@ -27,29 +27,29 @@
                      <children>
                         <VBox prefHeight="64.0" prefWidth="267.0" spacing="5.0">
                            <children>
-                              <Label text="Usuário" textFill="WHITE" />
-                              <TextField fx:id="loginFiled" promptText="👤 Login" style="-fx-background-color: #EDEDED; -fx-border-radius: 10px; -fx-border-color: #BFBFBF; -fx-background-radius: 10px;" />
+                              <Label text="👤 Usuário" textFill="WHITE" />
+                              <TextField fx:id="loginFiled" promptText="Login" style="-fx-background-color: #EDEDED; -fx-border-radius: 10px; -fx-border-color: #BFBFBF; -fx-background-radius: 10px;" styleClass="loginField" stylesheets="@../style/FieldStyle.css" />
                            </children>
                         </VBox>
                         <VBox spacing="5.0">
                            <children>
-                              <Label text="Senha" textFill="WHITE" />
-                              <PasswordField fx:id="passwordField" promptText="🔒 password" style="-fx-background-color: #EDEDED; -fx-border-color: #BFBFBF; -fx-border-radius: 10px; -fx-background-radius: 10px;" />
+                              <Label text="🔒 Senha" textFill="WHITE" />
+                              <PasswordField fx:id="passwordField" promptText="Password" style="-fx-background-color: #EDEDED; -fx-border-color: #BFBFBF; -fx-border-radius: 10px; -fx-background-radius: 10px;" styleClass="passwordField" stylesheets="@../style/FieldStyle.css" />
                            </children>
                         </VBox>
                      </children>
                   </VBox>
-                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #333333; -fx-border-color: #4D4D4D; -fx-border-radius: 6px; -fx-background-radius: 6px;" text="Acessar" textAlignment="CENTER" textFill="WHITE">
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #333333; -fx-border-color: #4D4D4D; -fx-border-radius: 6px; -fx-background-radius: 6px;" styleClass="ButtonAcessar" stylesheets="@../style/ButtomStyle.css" text="Acessar" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#functionToStudent" prefHeight="29.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-text-decoration: underline;" text="Sou um estudante" textFill="#cccccc">
+                  <Button mnemonicParsing="false" onAction="#functionToStudent" prefHeight="29.0" prefWidth="136.0" style="-fx-background-color: none;" styleClass="hyperlinkButton" stylesheets="@../style/ButtomStyle.css" text="Sou um estudante" textFill="#cccccc">
                      <font>
                         <Font name="System Bold Italic" size="13.0" />
                      </font>
                   </Button>
-                  <Label fx:id="alertLabel" alignment="CENTER" contentDisplay="CENTER" textFill="#e10e0e">
+                  <Label fx:id="alertLabel" alignment="CENTER" contentDisplay="CENTER" textFill="#d32f2f">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
@@ -64,7 +64,7 @@
             </VBox>
             <ImageView fitHeight="389.0" fitWidth="380.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@img/professor.png" />
+                  <Image url="@../img/professor.png" />
                </image>
             </ImageView>
          </children>

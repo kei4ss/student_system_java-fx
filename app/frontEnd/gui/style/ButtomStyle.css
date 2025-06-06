@@ -1,0 +1,30 @@
+/* Botão Acessar */
+.ButtonAcessar {
+    -fx-background-color: #222;
+    -fx-text-fill: white;
+    -fx-background-radius: 8px;
+    -fx-padding: 5 15;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, transparent, 0, 0.0, 0, 0);
+    -fx-transition: all 0.3s ease;
+}
+
+.ButtonAcessar:hover {
+    -fx-background-color: #444;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+
+.hyperlinkButton {
+    -fx-text-fill: #ccc;
+    -fx-underline: false;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+}
+.hyperlinkButton:hover {
+    -fx-text-fill: white;
+    -fx-underline: true;
+}

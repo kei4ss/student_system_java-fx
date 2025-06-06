@@ -1,0 +1,15 @@
+.loginField, .passwordField {
+    -fx-background-color: #f4f4f4;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 5 9;
+    -fx-font-size: 12px;
+    -fx-text-fill: #333;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(three-pass-box, transparent, 0, 0.0, 0, 0);
+    -fx-transition: all 0.4s ease;
+}
+
+.loginField:focused, .passwordField:focused {
+    -fx-effect: dropshadow(three-pass-box, #6ab7ff, 5, 0.2, 0, 0);
+}
