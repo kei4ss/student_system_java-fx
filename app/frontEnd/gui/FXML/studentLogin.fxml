@@ -33,7 +33,7 @@
                         <VBox spacing="5.0">
                            <children>
                               <Label text="👤 Login" textFill="WHITE" />
-                              <TextField fx:id="loginField" prefHeight="35.0" prefWidth="224.0" promptText="Insira seu usuário/login" style="-fx-background-color: #EDEDED; -fx-border-radius: 10px; -fx-border-color: #BFBFBF; -fx-background-radius: 10px;" styleClass="loginField" stylesheets="@../style/FieldStyle.css" />
+                              <TextField fx:id="loginField" prefHeight="35.0" prefWidth="224.0" promptText="Insira seu usuário/login" style="-fx-background-color: #EDEDED; -fx-border-radius: 10px; -fx-border-color: #BFBFBF; -fx-background-radius: 10px;" styleClass="defaultField" stylesheets="@../style/FieldStyle.css" />
                            </children>
                            <padding>
                               <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
@@ -42,7 +42,7 @@
                         <VBox spacing="5.0">
                            <children>
                               <Label text="🔒 Senha" textFill="WHITE" />
-                              <PasswordField fx:id="passwordField" prefHeight="35.0" prefWidth="224.0" promptText="Insira sua senha" style="-fx-background-color: #EDEDED; -fx-border-color: #BFBFBF; -fx-border-radius: 10px; -fx-background-radius: 10px;" styleClass="passwordField" stylesheets="@../style/FieldStyle.css" />
+                              <PasswordField fx:id="passwordField" prefHeight="35.0" prefWidth="224.0" promptText="Insira sua senha" style="-fx-background-color: #EDEDED; -fx-border-color: #BFBFBF; -fx-border-radius: 10px; -fx-background-radius: 10px;" styleClass="defaultField" stylesheets="@../style/FieldStyle.css" />
                            </children>
                            <padding>
                               <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
@@ -52,7 +52,7 @@
                   </VBox>
                   <VBox alignment="CENTER" spacing="15.0">
                      <children>
-                        <Button fx:id="btnEnter" alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #333333; -fx-border-color: #4D4D4D; -fx-border-radius: 6px; -fx-background-radius: 6px;" styleClass="ButtonAcessar" stylesheets="@../style/ButtomStyle.css" text="Acessar" textAlignment="CENTER" textFill="WHITE">
+                        <Button fx:id="btnEnter" alignment="CENTER" mnemonicParsing="false" onAction="#acessar" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #333333; -fx-border-color: #4D4D4D; -fx-border-radius: 6px; -fx-background-radius: 6px;" styleClass="ButtonAcessar" stylesheets="@../style/ButtomStyle.css" text="Acessar" textAlignment="CENTER" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font>

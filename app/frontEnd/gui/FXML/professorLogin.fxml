@@ -28,18 +28,18 @@
                         <VBox prefHeight="64.0" prefWidth="267.0" spacing="5.0">
                            <children>
                               <Label text="👤 Usuário" textFill="WHITE" />
-                              <TextField fx:id="loginFiled" promptText="Login" style="-fx-background-color: #EDEDED; -fx-border-radius: 10px; -fx-border-color: #BFBFBF; -fx-background-radius: 10px;" styleClass="loginField" stylesheets="@../style/FieldStyle.css" />
+                              <TextField fx:id="loginFiled" promptText="Login" style="-fx-background-color: #EDEDED; -fx-border-radius: 10px; -fx-border-color: #BFBFBF; -fx-background-radius: 10px;" styleClass="defaultField" stylesheets="@../style/FieldStyle.css" />
                            </children>
                         </VBox>
                         <VBox spacing="5.0">
                            <children>
                               <Label text="🔒 Senha" textFill="WHITE" />
-                              <PasswordField fx:id="passwordField" promptText="Password" style="-fx-background-color: #EDEDED; -fx-border-color: #BFBFBF; -fx-border-radius: 10px; -fx-background-radius: 10px;" styleClass="passwordField" stylesheets="@../style/FieldStyle.css" />
+                              <PasswordField fx:id="passwordField" promptText="Password" style="-fx-background-color: #EDEDED; -fx-border-color: #BFBFBF; -fx-border-radius: 10px; -fx-background-radius: 10px;" styleClass="defaultField" stylesheets="@../style/FieldStyle.css" />
                            </children>
                         </VBox>
                      </children>
                   </VBox>
-                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #333333; -fx-border-color: #4D4D4D; -fx-border-radius: 6px; -fx-background-radius: 6px;" styleClass="ButtonAcessar" stylesheets="@../style/ButtomStyle.css" text="Acessar" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="btnLogin" alignment="CENTER" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #333333; -fx-border-color: #4D4D4D; -fx-border-radius: 6px; -fx-background-radius: 6px;" styleClass="ButtonAcessar" stylesheets="@../style/ButtomStyle.css" text="Acessar" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>

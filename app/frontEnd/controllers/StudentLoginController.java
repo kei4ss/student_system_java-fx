@@ -36,4 +36,16 @@ public class StudentLoginController {
             alertLabel.setText("Erro ao acessar área de professor!");
         }
     }
+
+    @FXML
+    void acessar(){
+        if(!CommomTools.isFieldReady(loginField)){
+            alertLabel.setText("Preencha o campo de login!");
+            return;
+        }if(!CommomTools.isFieldReady(passwordField)){
+            alertLabel.setText("Preencha o campo de senha!");
+            return;
+        }
+        alertLabel.setText("");
+    }
 }
